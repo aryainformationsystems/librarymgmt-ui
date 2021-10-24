@@ -10,11 +10,18 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { SidebarNavigationComponent } from './components/sidebar-navigation/sidebar-navigation.component';
+import { BooksComponent } from './pages/books/books.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    SidebarNavigationComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +30,10 @@ import { MatIconModule } from '@angular/material/icon';
     MatSidenavModule,
     MatButtonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatListModule,
+    MatTableModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

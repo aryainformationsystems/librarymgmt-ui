@@ -1,14 +1,16 @@
 <mat-drawer-container class="example-container" autosize>
     <mat-drawer #drawer class="example-sidenav" mode="side" opened>
-        <p>Auto-resizing sidenav</p>
-        <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-        <button (click)="showFiller = !showFiller" mat-raised-button>
-            Toggle extra text
-        </button>
+        <div style="text-align: center; padding-top: 30px;">
+            <img src="https://picsum.photos/150" style="border-radius: 50%;">
+            <h1>Suryakant Singh</h1>
+            <div>System Administrator</div>
+        </div>
+        <br>
+        <app-sidebar-navigation></app-sidebar-navigation>
     </mat-drawer>
 
     <div class="example-sidenav-content">
-        <p>
+        <p class="mat-elevation-z2">
             <mat-toolbar color="primary">
                 <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
                     <mat-icon>menu</mat-icon>
@@ -24,6 +26,9 @@
                 </button>
             </mat-toolbar>
         </p>
+        <div style="padding: 20px">
+            <router-outlet></router-outlet>
+        </div>
     </div>
 
 </mat-drawer-container>
