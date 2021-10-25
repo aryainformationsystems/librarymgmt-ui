@@ -7,13 +7,13 @@
 <br>
 <div>
     <table mat-table [dataSource]="books" class="mat-elevation-z8">
-        <ng-container matColumnDef="id">
+        <ng-container matColumnDef="_id">
             <th mat-header-cell *matHeaderCellDef> ID. </th>
-            <td mat-cell *matCellDef="let book"> {{book.bookId}} </td>
+            <td mat-cell *matCellDef="let book"> {{book._id}} </td>
         </ng-container>
-        <ng-container matColumnDef="name">
+        <ng-container matColumnDef="bookName">
             <th mat-header-cell *matHeaderCellDef> Name </th>
-            <td mat-cell *matCellDef="let book"> {{book.name}} </td>
+            <td mat-cell *matCellDef="let book"> {{book.bookName}} </td>
         </ng-container>
         <ng-container matColumnDef="type">
             <th mat-header-cell *matHeaderCellDef> Type </th>
