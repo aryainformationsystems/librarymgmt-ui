@@ -20,6 +20,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SidebarNavigationComponent } from './components/sidebar-navigation/sidebar-navigation.component';
 import { BooksComponent } from './pages/books/books.component';
 import { MembersComponent } from './pages/members/members.component';
+import { IssueComponent } from './pages/issue/issue.component';
+import { UserComponent } from './pages/user/user.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { MembersComponent } from './pages/members/members.component';
     HomeComponent,
     SidebarNavigationComponent,
     BooksComponent,
-    MembersComponent
+    MembersComponent,
+    IssueComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
